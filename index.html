@@ -10,6 +10,14 @@
     <link rel="stylesheet" type="text/css" href="css/footing.css" />
     <link rel="stylesheet" type="text/css" href="css/christmas.css" />
 <script>
+//Adding a passcode to the site
+        var passkey = "W";
+        alert("Welcome to You'r Grades! Please enter the password to continue!");
+        var attempt = prompt("Enter the password:");
+        while (attempt != passkey) {
+            alert("Incorrect passkey! Stop trying to figure out the password.");
+            attempt = prompt("Enter the password:");
+        }
     // Function to load total time spent and display it
     function displayTotalTimeSpent() {
         const totalKey = 'totalTimeSpent';
@@ -69,7 +77,7 @@
 
     <div class="container">
         <br></br>
-        <h1>Proll's Games V4.2</h1>
+        <h1>Cheesy's Games V4.2</h1>
         <center>
             <a>Time Spent: </a><span id="timeSpent">Loading...</span>
         </center>
