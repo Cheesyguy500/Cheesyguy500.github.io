@@ -10,14 +10,17 @@
     <link rel="stylesheet" type="text/css" href="css/footing.css" />
     <link rel="stylesheet" type="text/css" href="css/christmas.css" />
 <script>
-//Adding a passcode to the site
-        var passkey = "W";
-        alert("Welcome to You'r Grades! Please enter the password to continue!");
-        var attempt = prompt("Enter the password:");
-        while (attempt != passkey) {
-            alert("Incorrect passkey! Stop trying to figure out the password.");
-            attempt = prompt("Enter the password:");
-        }
+    //Adding a passcode to the site
+    const passkey = "W";
+    const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    alert("Welcome to our games site! To proceed, you must enter the password.");
+    var attempt = prompt("Please enter the password:");
+    if(attempt != passkey) {
+        alert("Correct!");
+        window.location.replace(url);
+    } else {
+        alert("Correct! You may now proceed to our site!")
+    }
     // Function to load total time spent and display it
     function displayTotalTimeSpent() {
         const totalKey = 'totalTimeSpent';
